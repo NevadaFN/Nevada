@@ -12,7 +12,7 @@ const Flowlog = require('./managers/Flowlog')
 
 const port = require(`./port.json`)
 
-express.listen(process.env.port || port.port || 3551, () => {
+express.listen(process.env.port || port.port || 2277, () => {
     Flowlog.Log('Created by Nevada devs')
     Flowlog.Log(`listening to port\x1b[36m ${port.port} \x1b[0m`)
     Flowlog.Server(`Enjoy Nevada`)
